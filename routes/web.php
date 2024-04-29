@@ -3,7 +3,7 @@
 use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/contacts', [ContactController::class, 'index'])->name('index');
+Route::get('/', [ContactController::class, 'index'])->name('index');
 
 Route::get('/contacts/find', [ContactController::class, 'find'])->name('find');
 // Route::get('/contacts/find/{id}', [ContactController::class, 'show'])->name('show');
