@@ -9,99 +9,50 @@
 
 ## 🚀 starting
 
-These instructions will allow you to get a copy of the project running on your local machine for development and testing purposes.
+Estas instruções permitirão que você obtenha uma cópia do projeto em execução em sua máquina local para fins de desenvolvimento e teste.
 
-### 📋 Prerequisites
+### 📋 Pre-requisit0s
 
-What things do you need to install the software and how do you install it?
+O que você precisa para instalar o software e como instalá-lo?
 
-|Technologies    |PHP                            |Composer                     |
+|Tecnologies    |PHP                            |Composer                     |
 |----------------|-------------------------------|-----------------------------|
-|Version         |`^8.1`                        |`2.6.6`                      |
+|Versão         |`^8.1`                        |`2.6.6`                      |
 
-### 🔧 Installation
-1. Clone the repository:
+### 🔧 Instalação
+1. Clone o repositorio:
 ```
-git clone https://github.com/JosePedro-22/Backend-Challenge.git
+git clone https://github.com/JosePedro-22/ProjetoASC.git
 ```
 2. Navigate to the project directory:
 ```
-cd Backend-Challenge
+cd ProjetoASC
 ```
-3. Install dependencies:
+3. Instalando dependencias:
 ```
 composer install
 ```
-5. Create the seed:
+e
+
 ```
-php artisan db:seed --class=NewsSeeder
+npm install
 ```
-6. starting project:
+e 
+```
+npm run dev
+```
+5. Iniciando projeto:
 ```
 php artisan serve
 ```
-7. Clone the repository:
-```
-git clone https://github.com/JosePedro-22/Frontend-Challenge.git
-```
-8. Navigate to the project directory:
-```
-cd Frontend-Challenge
-```
-9. starting project:
-```
-http-server
-```
+## 🎲 A principal decisões técnicas que tomei:
 
-
-## ⚙️ Running the tests
-
-To run test
-
-```
-php artisan test
-```
-
-### 🔩 Unitary tests (Unit Tests):
-
-To run the test, run the command
-
-```
-php artisan test tests/Unit/app/Domain/News/Service/NewsServiceTest.php
-```
-
-### 🔩 End-to-End Tests (Feature Tests):
-
-To run the test, run the command
-
-```
-php artisan test tests/Feature/app/Domain/News/Service/NewsServiceTest.php
-```
-
-## 🎲 The main technical decisions I made: 
-
-* Language and Framework: Laravel is a popular choice for developing PHP web applications due to its elegant syntax and comprehensive feature set. Furthermore, the PHP language is widely used and has a large community of developers and resources available.
-* Architecture: We chose to apply the principle of Domain-Driven Design (DDD) to organize the code into distinct layers. This helps maintain a clear separation of responsibilities and facilitates application maintenance and scalability.
-* Tests: Unit tests and end-to-end tests were implemented to ensure code quality and correct application functionality. Testing helps identify and fix problems earlier in the development cycle.
-* API Output: Using the Eloquent's resource class allows you to expressively and easily transform your models and model collections into JSON.
-
-## 💬 comments about the project:
-#### Diagrams of the path from request to response
-```mermaid
-graph LR
-A[HTTP Request] --> B[Routing Middleware]
-B --> C[Controller]
-C --> D[Service]
-D --> C
-C --> F[HTTP Response]
-
-```
+* Linguagem e Framework: Laravel é uma escolha popular para o desenvolvimento de aplicações web PHP devido à sua sintaxe elegante e conjunto abrangente de recursos. Além disso, a linguagem PHP é amplamente utilizada e possui uma grande comunidade de desenvolvedores e recursos disponíveis.
 
 ## 🎲 Other
 |Name Branch     |Description                                                  |
 |----------------|-------------------------------------------------------------|
-|main            |base project|
-|feat/list-materials            |develop project|
+|main            | project|
 
 ## 🛠️ Building with
 
